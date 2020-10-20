@@ -1,6 +1,7 @@
 $(document).ready(function () {
     $("#button1").on("click", button1Click);
     $(".img-small").on("click", imgClick);
+    $(".img-container").hover(imgContainerShowTXT, imgContainerHideTXT)
 });
 
 function button1Click() {
@@ -10,6 +11,13 @@ function button1Click() {
     else {
         $("#img1").attr("hidden", "hidden");
     }
+}
+
+function imgContainerShowTXT() {
+     $(this).children(".img-caption").attr("hidden", null);
+}
+function imgContainerHideTXT() {
+    $(this).children(".img-caption").attr("hidden", "hidden");
 }
 function imgClick() {
     if ($(this).hasClass("rounded-circle")) {
