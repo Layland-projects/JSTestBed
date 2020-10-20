@@ -1,0 +1,14 @@
+﻿body
+{
+}
+.img-small{
+    width: 23%;
+    height: 23%;
+    margin: 1%;
+}
+#img1{
+    margin-left: 0px;
+}
+#img4{
+    margin-right: 0px;
+}
