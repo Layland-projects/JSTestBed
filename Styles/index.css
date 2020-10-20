@@ -26,9 +26,9 @@
     vertical-align: middle;
     transform: translate(-50%, -50%);
 }
-#img1{
+.img-left{
     margin-left: 0px;
 }
-#img4{
+.img-right{
     margin-right: 0px;
 }

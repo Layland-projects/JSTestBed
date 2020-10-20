@@ -2,6 +2,7 @@ $(document).ready(function () {
     $("#button1").on("click", button1Click);
     $(".img-small").on("click", imgClick);
     $(".img-container").hover(imgContainerShowTXT, imgContainerHideTXT)
+    $("#welcomeModal").modal('show');
 });
 
 function button1Click() {
