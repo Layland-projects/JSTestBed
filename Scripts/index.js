@@ -1,7 +1,8 @@
 $(document).ready(function () {
     $("#button1").on("click", button1Click);
     $(".img-small").on("click", imgClick);
-    $(".img-container").hover(imgContainerShowTXT, imgContainerHideTXT)
+    $(".img-container").hover(imgContainerShowTXT, imgContainerHideTXT);
+    $("#button2").on("click", button2Click);
     $("#welcomeModal").modal('show');
 });
 
@@ -13,7 +14,15 @@ function button1Click() {
         $("#img1").attr("hidden", "hidden");
     }
 }
-
+function button2Click() {
+    var elems = $(".img-small");
+    if (elems.attr("src") === "Content/stockImage.jpg") {
+        elems.attr("src", "Content/stockImage2.jpg");
+    }
+    else {
+        elems.attr("src", "Content/stockImage.jpg");
+    }
+}
 function imgContainerShowTXT() {
     $(this).children(".img-caption").attr("hidden", null);
     $(this).children("img").addClass("img-small-hover");
@@ -29,11 +38,4 @@ function imgClick() {
     else {
         $(this).addClass("rounded-circle");
     }
-}
-function button2Click() {
-    var elems = $(".img-small"); //select all elements with this tag
-
-    //apply a class to the elements to overlay a green box
-
-    //add if statement so the button serves as a toggle
 }
