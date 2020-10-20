@@ -14,10 +14,12 @@ function button1Click() {
 }
 
 function imgContainerShowTXT() {
-     $(this).children(".img-caption").attr("hidden", null);
+    $(this).children(".img-caption").attr("hidden", null);
+    $(this).children("img").addClass("img-small-hover");
 }
 function imgContainerHideTXT() {
     $(this).children(".img-caption").attr("hidden", "hidden");
+    $(this).children("img").removeClass("img-small-hover");
 }
 function imgClick() {
     if ($(this).hasClass("rounded-circle")) {
@@ -26,4 +28,11 @@ function imgClick() {
     else {
         $(this).addClass("rounded-circle");
     }
+}
+function button2Click() {
+    var elems = $(".img-small"); //select all elements with this tag
+
+    //apply a class to the elements to overlay a green box
+
+    //add if statement so the button serves as a toggle
 }

@@ -5,6 +5,10 @@
     width: 98%;
     height: 98%;
     margin: 1%;
+    background: red;
+}
+.img-small-hover{
+    opacity: 0.6;
 }
 .img-container {
     position: relative;
