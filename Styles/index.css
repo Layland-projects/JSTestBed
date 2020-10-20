@@ -2,9 +2,23 @@
 {
 }
 .img-small{
+    width: 98%;
+    height: 98%;
+    margin: 1%;
+}
+.img-container{
+    position: relative;
+    text-align: center;
     width: 23%;
     height: 23%;
     margin: 1%;
+    color: white;
+}
+.img-caption {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%. -50%);
 }
 #img1{
     margin-left: 0px;
